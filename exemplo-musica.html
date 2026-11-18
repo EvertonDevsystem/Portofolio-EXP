@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Artista Musical — Novo Single Disponível</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--roxo:#8b5cf6;--rosa:#ec4899;--preto:#0a0a0f;--bg:#0f0f1a;--text:#fff}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}
+  .bg-anim{position:fixed;inset:0;z-index:-1;pointer-events:none}
+  .bg-anim::before,.bg-anim::after{content:'';position:absolute;width:500px;height:500px;border-radius:50%;filter:blur(120px);opacity:.25}
+  .bg-anim::before{background:var(--roxo);top:-150px;left:-100px;animation:float 10s ease-in-out infinite}
+  .bg-anim::after{background:var(--rosa);bottom:-150px;right:-100px;animation:float 12s ease-in-out infinite reverse}
+  @keyframes float{0%,100%{transform:translate(0,0)}50%{transform:translate(50px,30px)}}
+  .container{max-width:1180px;margin:0 auto;padding:0 24px}
+  header{padding:20px 0;position:sticky;top:0;z-index:10;background:rgba(10,10,15,.8);backdrop-filter:blur(10px)}
+  .nav{display:flex;justify-content:space-between;align-items:center}
+  .logo{font-family:'Bebas Neue',cursive;font-size:1.8rem;letter-spacing:3px;background:linear-gradient(135deg,var(--roxo),var(--rosa));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .nav a{color:#fff;text-decoration:none;margin-left:24px;font-weight:500}
+  .hero{padding:120px 0;text-align:center}
+  .single-badge{display:inline-block;padding:6px 18px;border-radius:50px;background:rgba(139,92,246,.15);border:1px solid rgba(139,92,246,.4);font-size:.75rem;letter-spacing:2px;text-transform:uppercase;color:#c4b5fd;margin-bottom:24px}
+  .hero h1{font-family:'Bebas Neue',cursive;font-size:clamp(3rem,10vw,6rem);letter-spacing:4px;line-height:1;margin-bottom:8px}
+  .hero h1 .grad{background:linear-gradient(135deg,var(--roxo),var(--rosa));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .hero .sub{font-size:1.2rem;color:#a78bfa;margin-bottom:32px;font-weight:500}
+  .cover{width:280px;height:280px;margin:0 auto 32px;border-radius:20px;background:linear-gradient(135deg,var(--roxo),var(--rosa));display:grid;place-items:center;font-size:8rem;box-shadow:0 20px 60px rgba(139,92,246,.4);animation:pulse 3s ease-in-out infinite}
+  @keyframes pulse{0%,100%{box-shadow:0 20px 60px rgba(139,92,246,.4)}50%{box-shadow:0 30px 80px rgba(236,72,153,.5)}}
+  .btn{display:inline-block;padding:16px 36px;border-radius:50px;font-weight:700;text-decoration:none;transition:all .2s;text-transform:uppercase;letter-spacing:1px;font-size:.9rem}
+  .btn-primary{background:linear-gradient(135deg,var(--roxo),var(--rosa));color:#fff;box-shadow:0 8px 30px rgba(139,92,246,.35)}
+  .btn-primary:hover{transform:translateY(-2px) scale(1.03)}
+  .streams{padding:60px 0;background:rgba(0,0,0,.3);text-align:center;border-top:1px solid rgba(255,255,255,.05);border-bottom:1px solid rgba(255,255,255,.05)}
+  .streams h2{font-family:'Bebas Neue',cursive;font-size:1.5rem;letter-spacing:2px;color:#a78bfa;margin-bottom:24px}
+  .stream-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .stream-btn{padding:12px 24px;border-radius:8px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:#fff;text-decoration:none;font-weight:600;font-size:.85rem;transition:all .2s}
+  .stream-btn:hover{background:rgba(139,92,246,.15);border-color:var(--roxo)}
+  .resultado{padding:80px 0;text-align:center}
+  .resultado h2{font-family:'Bebas Neue',cursive;font-size:2rem;letter-spacing:2px;margin-bottom:32px;color:#c4b5fd}
+  .big-num{font-family:'Bebas Neue',cursive;font-size:clamp(3rem,8vw,6rem);background:linear-gradient(135deg,var(--roxo),var(--rosa));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;line-height:1;margin-bottom:8px}
+  .resultado p{font-size:1.1rem;color:#c4b5fd;margin-bottom:40px}
+  .estrategia{max-width:800px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;text-align:left}
+  .est-item{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);padding:18px;border-radius:12px;font-size:.92rem}
+  .est-item strong{color:#f9a8d4;display:block;margin-bottom:4px}
+  .redes{padding:60px 0;background:rgba(0,0,0,.3);text-align:center}
+  .redes h3{font-family:'Bebas Neue',cursive;font-size:1.5rem;letter-spacing:2px;margin-bottom:24px}
+  .socials{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+  .social{width:56px;height:56px;border-radius:50%;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);display:grid;place-items:center;font-size:1.5rem;text-decoration:none;color:#fff;transition:all .2s}
+  .social:hover{background:linear-gradient(135deg,var(--roxo),var(--rosa));border-color:transparent;transform:scale(1.1)}
+  footer{padding:30px 0;text-align:center;color:#666;font-size:.85rem;border-top:1px solid rgba(255,255,255,.05)}
+  footer span{background:linear-gradient(135deg,var(--roxo),var(--rosa));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;font-weight:600}
+  .wa{position:fixed;bottom:24px;right:24px;width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;color:#fff;font-size:1.8rem;box-shadow:0 8px 24px rgba(37,211,102,.4);text-decoration:none;z-index:99}
+</style>
+</head>
+<body>
+<div class="bg-anim"></div>
+<header><div class="container nav"><div class="logo">MC LUCAS</div><nav><a href="#lancamento">Lançamento</a><a href="#redes">Redes</a><a href="https://wa.me/5517997521171?text=Ol%C3%A1!%20Quero%20contratar%20o%20Artista%20Musical" target="_blank">Contato</a></nav></div></header>
+<section class="hero" id="lancamento"><div class="container"><div class="single-badge">🔥 NOVO SINGLE DISPONÍVEL</div><div class="cover">🎵</div><h1>NOITE <span class="grad">PERFEITA</span></h1><p class="sub">Produzido por Krynos Beats</p><a href="#streams" class="btn btn-primary">▶️ OUVIR AGORA</a></div></section>
+<section class="streams" id="streams"><div class="container"><h2>— DISPONÍVEL EM TODAS AS PLATAFORMAS —</h2><div class="stream-btns">
+<a href="#" class="stream-btn">🟢 Spotify</a>
+<a href="#" class="stream-btn">🍎 Apple Music</a>
+<a href="#" class="stream-btn">🎵 Deezer</a>
+<a href="#" class="stream-btn">▶️ YouTube</a>
+<a href="#" class="stream-btn">📻 Amazon Music</a>
+</div></div></section>
+<section class="resultado"><div class="container"><h2>— RESULTADO DO LANÇAMENTO ESTRATÉGICO —</h2><div class="big-num">500K+</div><p>de plays em 1 mês nas plataformas digitais</p><div class="estrategia">
+<div class="est-item"><strong>🎬 TikTok</strong>30 clipes virais estratégicos</div>
+<div class="est-item"><strong>📸 Instagram</strong>Reels diários + bastidores</div>
+<div class="est-item"><strong>🎨 ID Visual</strong>Campanha gráfica exclusiva</div>
+<div class="est-item"><strong>💰 Tráfego Pago</strong>Anúncios segmentados</div>
+<div class="est-item"><strong>📊 Análise</strong>Monitoramento diário</div>
+<div class="est-item"><strong>🤝 Parcerias</strong>Influenciadores do nicho</div>
+</div></div></section>
+<section class="redes" id="redes"><div class="container"><h3>— SIGA PARA MAIS LANÇAMENTOS —</h3><div class="socials">
+<a href="#" class="social">🎵</a><a href="#" class="social">📸</a><a href="#" class="social">🎬</a><a href="#" class="social">▶️</a><a href="https://wa.me/5517997521171?text=Ol%C3%A1!%20Quero%20falar%20com%20o%20Artista%20Musical" target="_blank" class="social">💬</a>
+</div></div></section>
+<footer><div class="container"><p>MC Lucas © 2026 · Estratégia de lançamento por <span>Krynos</span></p></div></footer>
+<a href="https://wa.me/5517997521171?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Artista%20Musical" target="_blank" class="wa">💬</a>
+</body>
+</html>

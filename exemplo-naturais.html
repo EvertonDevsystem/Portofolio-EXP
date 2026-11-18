@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Produtos Naturais — Vida Saudável</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{--verde:#228b22;--verde-claro:#84cc16;--bg:#f5f9f0;--text:#1a2e05;--muted:#4d7c0f}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+  .container{max-width:1180px;margin:0 auto;padding:0 24px}
+  header{background:#fff;padding:20px 0;position:sticky;top:0;z-index:10;border-bottom:1px solid #dcfce7}
+  .nav{display:flex;justify-content:space-between;align-items:center}
+  .logo{font-weight:700;font-size:1.3rem;letter-spacing:1px;color:var(--verde)}
+  .logo span{font-family:'Lora',serif;font-style:italic;font-weight:400;color:var(--verde-claro)}
+  .nav a{color:var(--text);text-decoration:none;margin-left:24px;font-weight:500;font-size:.92rem}
+  .hero{padding:100px 0;background:linear-gradient(135deg,#dcfce7 0%,#ecfccb 100%);text-align:center}
+  .hero h1{font-size:clamp(2rem,5vw,3.2rem);font-weight:700;margin-bottom:16px;line-height:1.2;color:var(--verde)}
+  .hero h1 em{font-family:'Lora',serif;font-weight:400;color:var(--text)}
+  .hero p{font-size:1.1rem;color:var(--muted);max-width:540px;margin:0 auto 32px}
+  .btn{display:inline-block;padding:14px 36px;border-radius:50px;font-weight:600;text-decoration:none;transition:all .2s}
+  .btn-primary{background:var(--verde);color:#fff;box-shadow:0 8px 24px rgba(34,139,34,.25)}
+  .btn-primary:hover{transform:translateY(-2px);background:var(--verde-claro)}
+  .produtos{padding:80px 0}
+  .section-title{font-size:1.8rem;font-weight:700;text-align:center;margin-bottom:40px;color:var(--verde)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+  .prod{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 16px rgba(34,139,34,.08);transition:all .3s;text-align:center}
+  .prod:hover{transform:translateY(-6px)}
+  .prod-img{height:200px;display:grid;place-items:center;font-size:4.5rem}
+  .prod-body{padding:20px}
+  .prod-body h3{font-size:1rem;margin-bottom:6px}
+  .prod-body .preco{font-size:1.3rem;font-weight:700;color:var(--verde);margin-top:8px}
+  .identidade{padding:60px 0;background:#fff;border-top:1px solid #dcfce7;border-bottom:1px solid #dcfce7}
+  .id-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .mockup-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .mk{aspect-ratio:1;border-radius:14px;display:grid;place-items:center;font-size:2rem;font-weight:700}
+  .mk1{background:var(--verde);color:#fff}
+  .mk2{background:#fff;border:3px solid var(--verde);color:var(--verde)}
+  .mk3{background:linear-gradient(135deg,#dcfce7,#86efac);color:var(--verde);grid-column:span 2;font-size:1rem;padding:20px}
+  .id-text h2{font-size:1.8rem;font-weight:700;color:var(--verde);margin-bottom:16px}
+  .id-text p{color:var(--muted);margin-bottom:12px}
+  .check{color:var(--verde);font-weight:700;margin-right:8px}
+  .resultado{padding:60px 0;background:var(--verde);color:#fff;text-align:center}
+  .resultado h2{font-size:1.8rem;font-weight:700;margin-bottom:16px}
+  .resultado .big{font-size:4rem;font-weight:700;margin:16px 0}
+  .cta{padding:80px 0;text-align:center}
+  .cta h2{font-size:1.8rem;font-weight:700;color:var(--verde);margin-bottom:12px}
+  .cta p{color:var(--muted);margin-bottom:28px}
+  footer{background:var(--text);color:#bbf7d0;padding:30px 0;text-align:center;font-size:.88rem}
+  footer span{color:var(--verde-claro)}
+  .wa{position:fixed;bottom:24px;right:24px;width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;color:#fff;font-size:1.8rem;box-shadow:0 8px 24px rgba(37,211,102,.4);text-decoration:none;z-index:99}
+</style>
+</head>
+<body>
+<header><div class="container nav"><div class="logo">VIVA <span>Natural</span></div><nav><a href="#produtos">Produtos</a><a href="#sobre">Sobre</a><a href="https://wa.me/5517997521171?text=Ol%C3%A1!%20Quero%20comprar%20produtos%20naturais" target="_blank">Comprar</a></nav></div></header>
+<section class="hero"><div class="container"><h1>Natureza em <em>cada</em> produto</h1><p>100% natural, orgânico e sustentável. Alimente seu corpo com o que a terra tem de melhor.</p><a href="#produtos" class="btn btn-primary">🌿 Ver produtos</a></div></section>
+<section class="produtos" id="produtos"><div class="container"><h2 class="section-title">Nossa linha completa</h2><div class="grid">
+<div class="prod"><div class="prod-img" style="background:linear-gradient(135deg,#dcfce7,#86efac)">🌾</div><div class="prod-body"><h3>Granola Orgânica</h3><p>500g — sem açúcar</p><div class="preco">R$ 24,90</div></div></div>
+<div class="prod"><div class="prod-img" style="background:linear-gradient(135deg,#fef3c7,#fcd34d)">🍯</div><div class="prod-body"><h3>Mel Silvestre</h3><p>300g — puro da floresta</p><div class="preco">R$ 38,90</div></div></div>
+<div class="prod"><div class="prod-img" style="background:linear-gradient(135deg,#fce7f3,#f9a8d4)">🌺</div><div class="prod-body"><h3>Chás Medicinais</h3><p>6 variedades — 100g cada</p><div class="preco">R$ 18,90</div></div></div>
+<div class="prod"><div class="prod-img" style="background:linear-gradient(135deg,#dbeafe,#93c5fd)">🧴</div><div class="prod-body"><h3>Cosméticos Naturais</h3><p>Cremes e óleos vegetais</p><div class="preco">R$ 45,90</div></div></div>
+</div></div></section>
+<section class="identidade"><div class="container id-grid">
+<div class="mockup-grid">
+<div class="mk mk1">VIVA<br><small style="font-family:Lora,serif;font-weight:400;font-size:.9rem">Natural</small></div>
+<div class="mk mk2">VIVA<br><small style="font-family:Lora,serif;font-weight:400;font-size:.9rem;font-style:italic">Natural</small></div>
+<div class="mk mk3">📦 Embalagens, etiquetas e manual completo da marca</div>
+</div>
+<div class="id-text"><h2>Identidade Visual criada pela Krynos</h2><p>Uma marca que transmite confiança, naturalidade e qualidade. O resultado? O produto foi aceito em 3 grandes redes de supermercado!</p><p><span class="check">✓</span>Logo principal e variações</p><p><span class="check">✓</span>Paleta de cores naturais</p><p><span class="check">✓</span>Design de embalagens</p><p><span class="check">✓</span>Etiquetas e rótulos</p><p><span class="check">✓</span>Manual completo da marca</p></div>
+</div></section>
+<section class="resultado"><div class="container"><h2>Resultado direto da nova marca</h2><div class="big">3 REDES</div><p>de supermercado aceitaram o produto em suas prateleiras</p><p style="margin-top:8px;font-size:.95rem;opacity:.9">Expansão para mais de 40 pontos de venda</p></div></section>
+<section class="cta"><div class="container"><h2>Quer uma marca profissional para seu produto?</h2><p>Tenha uma identidade visual que abre portas no mercado.</p><a href="https://wa.me/5517997521171?text=Ol%C3%A1!%20Quero%20uma%20identidade%20visual%20igual%20a%20de%20Produtos%20Naturais" target="_blank" class="btn btn-primary">💬 Falar com Krynos</a></div></section>
+<footer><div class="container"><p>Viva Natural © 2026 · Identidade visual por <span>Krynos</span></p></div></footer>
+<a href="https://wa.me/5517997521171?text=Ol%C3%A1!%20Vim%20pelo%20site%20de%20Produtos%20Naturais" target="_blank" class="wa">💬</a>
+</body>
+</html>

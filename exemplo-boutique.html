@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boutique Bella Moda — Moda Feminina</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--rosa:#d63384;--rosa-2:#ff6b9d;--bg:#fff5f7;--text:#2d1b2e;--muted:#6c5b73}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+  .container{max-width:1180px;margin:0 auto;padding:0 24px}
+  header{background:#fff;padding:20px 0;border-bottom:1px solid #ffe0ea;position:sticky;top:0;z-index:10}
+  .nav{display:flex;justify-content:space-between;align-items:center}
+  .logo{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--rosa)}
+  .nav a{color:var(--text);text-decoration:none;margin-left:28px;font-size:.92rem;font-weight:500}
+  .hero{padding:80px 0;background:linear-gradient(135deg,#fff0f5 0%,#ffe4ec 100%);text-align:center}
+  .hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.5rem);margin-bottom:16px;color:var(--text)}
+  .hero p{color:var(--muted);font-size:1.1rem;max-width:560px;margin:0 auto 32px}
+  .btn{display:inline-block;padding:14px 36px;border-radius:50px;font-weight:600;text-decoration:none;transition:all .2s}
+  .btn-primary{background:var(--rosa);color:#fff;box-shadow:0 8px 24px rgba(214,51,132,.3)}
+  .btn-primary:hover{transform:translateY(-2px);background:var(--rosa-2)}
+  .btn-ghost{background:#fff;color:var(--rosa);border:2px solid var(--rosa);margin-left:12px}
+  .produtos{padding:80px 0}
+  .section-title{font-family:'Playfair Display',serif;font-size:2rem;text-align:center;margin-bottom:40px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+  .card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.06);transition:transform .3s}
+  .card:hover{transform:translateY(-6px)}
+  .card-img{height:280px;background:linear-gradient(135deg,#ffd1dc,#ffb3c6);display:grid;place-items:center;font-size:5rem}
+  .card-body{padding:20px}
+  .card h3{font-size:1rem;margin-bottom:8px}
+  .preco{font-size:1.3rem;font-weight:700;color:var(--rosa)}
+  .preco span{font-size:.85rem;color:var(--muted);text-decoration:line-through;margin-left:8px;font-weight:400}
+  .resultado{padding:60px 0;background:var(--rosa);color:#fff;text-align:center}
+  .resultado h2{font-family:'Playfair Display',serif;font-size:2.2rem;margin-bottom:12px}
+  .resultado .big{font-size:4rem;font-weight:700;margin:20px 0;font-family:'Playfair Display',serif}
+  .resultado p{font-size:1.1rem;opacity:.95}
+  .cta{padding:80px 0;text-align:center;background:#fff}
+  .cta h2{font-family:'Playfair Display',serif;font-size:2rem;margin-bottom:16px}
+  .cta p{color:var(--muted);margin-bottom:32px}
+  footer{background:#2d1b2e;color:#fff;padding:30px 0;text-align:center;font-size:.9rem}
+  footer span{color:var(--rosa-2)}
+  .wa{position:fixed;bottom:24px;right:24px;width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;color:#fff;font-size:1.8rem;box-shadow:0 8px 24px rgba(37,211,102,.4);text-decoration:none;z-index:99}
+</style>
+</head>
+<body>
+<header><div class="container nav"><div class="logo">Bella Moda</div><nav><a href="#">Coleções</a><a href="#">Novidades</a><a href="#">Promoções</a><a href="https://wa.me/5517997521171?text=Ol%C3%A1!%20Quero%20comprar%20na%20Bella%20Moda" target="_blank">Contato</a></nav></div></header>
+<section class="hero"><div class="container"><h1>Moda feminina que<br>valoriza você</h1><p>Peças exclusivas, qualidade premium e preços que cabem no bolso. Novidades toda semana.</p><a href="#produtos" class="btn btn-primary">Ver coleção →</a><a href="https://wa.me/5517997521171?text=Ol%C3%A1!%20Quero%20saber%20sobre%20as%20promo%C3%A7%C3%B5es%20da%20Bella%20Moda" target="_blank" class="btn btn-ghost">WhatsApp</a></div></section>
+<section class="produtos" id="produtos"><div class="container"><h2 class="section-title">Mais vendidas</h2><div class="grid">
+<div class="card"><div class="card-img">👗</div><div class="card-body"><h3>Vestido Midi Floral</h3><div class="preco">R$ 189,90 <span>R$ 249,90</span></div></div></div>
+<div class="card"><div class="card-img" style="background:linear-gradient(135deg,#f8bbd9,#f48fb1)">👚</div><div class="card-body"><h3>Blusa de Seda</h3><div class="preco">R$ 129,90 <span>R$ 179,90</span></div></div></div>
+<div class="card"><div class="card-img" style="background:linear-gradient(135deg,#ce93d8,#ba68c8)">👖</div><div class="card-body"><h3>Calça Alfaiataria</h3><div class="preco">R$ 219,90 <span>R$ 289,90</span></div></div></div>
+<div class="card"><div class="card-img" style="background:linear-gradient(135deg,#ffccbc,#ffab91)">👜</div><div class="card-body"><h3>Bolsa Couro Premium</h3><div class="preco">R$ 349,90 <span>R$ 449,90</span></div></div></div>
+</div></div></section>
+<section class="resultado"><div class="container"><h2>Resultado após o site</h2><div class="big">+200%</div><p>de crescimento nas vendas online em apenas 3 meses</p><p style="margin-top:12px;font-size:.95rem;opacity:.8">De R$ 15k/mês para R$ 45k/mês em faturamento</p></div></section>
+<section class="cta"><div class="container"><h2>Quer um resultado igual para sua loja?</h2><p>Tenha uma loja virtual profissional igual a esta. Venda 24h por dia.</p><a href="https://wa.me/5517997521171?text=Ol%C3%A1!%20Quero%20uma%20loja%20virtual%20igual%20a%20Boutique%20Bella%20Moda" target="_blank" class="btn btn-primary">💬 Falar com Krynos agora</a></div></section>
+<footer><div class="container"><p>Boutique Bella Moda © 2026 · Site desenvolvido por <span>Krynos</span></p></div></footer>
+<a href="https://wa.me/5517997521171?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Bella%20Moda" target="_blank" class="wa">💬</a>
+</body>
+</html>

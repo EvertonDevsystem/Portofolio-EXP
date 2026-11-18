@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Studio Juliana Lima — Beleza & Estética</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--dourado:#c9a227;--rosa:#d4a5a5;--bg:#faf6f0;--text:#3d2914;--muted:#7a6b5a}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+  .container{max-width:1180px;margin:0 auto;padding:0 24px}
+  header{padding:24px 0;border-bottom:1px solid #efe6d6}
+  .nav{display:flex;justify-content:space-between;align-items:center}
+  .logo{font-family:'Dancing Script',cursive;font-size:2.2rem;color:var(--dourado);font-weight:700}
+  .nav a{color:var(--text);text-decoration:none;margin-left:28px;font-size:.92rem;font-weight:500}
+  .hero{padding:100px 0;text-align:center;background:linear-gradient(180deg,#fff8ec 0%,#faf6f0 100%)}
+  .hero h1{font-family:'Dancing Script',cursive;font-size:clamp(2.5rem,6vw,4.5rem);color:var(--dourado);margin-bottom:16px}
+  .hero p{font-size:1.1rem;color:var(--muted);max-width:520px;margin:0 auto 32px}
+  .btn{display:inline-block;padding:14px 36px;border-radius:50px;font-weight:600;text-decoration:none;transition:all .2s}
+  .btn-primary{background:var(--dourado);color:#fff;box-shadow:0 8px 24px rgba(201,162,39,.25)}
+  .btn-primary:hover{transform:translateY(-2px)}
+  .servicos{padding:80px 0}
+  .section-title{font-family:'Dancing Script',cursive;font-size:2.5rem;color:var(--dourado);text-align:center;margin-bottom:12px}
+  .section-sub{text-align:center;color:var(--muted);margin-bottom:48px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px}
+  .card{background:#fff;border-radius:20px;padding:32px;text-align:center;box-shadow:0 4px 24px rgba(0,0,0,.04);border:1px solid #f0e6d2;transition:all .3s}
+  .card:hover{transform:translateY(-6px);box-shadow:0 12px 40px rgba(201,162,39,.15)}
+  .card-icon{font-size:3rem;margin-bottom:16px}
+  .card h3{font-size:1.15rem;margin-bottom:10px;color:var(--text)}
+  .card p{color:var(--muted);font-size:.92rem;margin-bottom:16px}
+  .card .preco{font-size:1.3rem;font-weight:700;color:var(--dourado)}
+  .identidade{padding:60px 0;background:#fff;border-top:1px solid #efe6d6;border-bottom:1px solid #efe6d6}
+  .id-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .id-mockup{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .mockup{aspect-ratio:1;border-radius:16px;display:grid;place-items:center;font-size:2.5rem}
+  .m1{background:linear-gradient(135deg,#3d2914,#c9a227);color:#fff}
+  .m2{background:#fff;border:2px solid var(--dourado);color:var(--dourado)}
+  .m3{background:var(--dourado);color:#fff;grid-column:span 2}
+  .id-text h2{font-family:'Dancing Script',cursive;font-size:2.2rem;color:var(--dourado);margin-bottom:16px}
+  .id-text p{color:var(--muted);margin-bottom:16px}
+  .check{color:var(--dourado);font-weight:600;margin-right:8px}
+  .cta{padding:80px 0;text-align:center}
+  .cta h2{font-family:'Dancing Script',cursive;font-size:2.2rem;color:var(--dourado);margin-bottom:12px}
+  .cta p{color:var(--muted);margin-bottom:28px}
+  footer{background:#3d2914;color:#e8dcc4;padding:30px 0;text-align:center;font-size:.9rem}
+  footer span{color:var(--dourado)}
+  .wa{position:fixed;bottom:24px;right:24px;width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;color:#fff;font-size:1.8rem;box-shadow:0 8px 24px rgba(37,211,102,.4);text-decoration:none;z-index:99}
+</style>
+</head>
+<body>
+<header><div class="container nav"><div class="logo">Juliana Lima</div><nav><a href="#servicos">Serviços</a><a href="#sobre">Sobre</a><a href="https://wa.me/5517997521171?text=Ol%C3%A1!%20Quero%20agendar%20no%20Studio%20Juliana%20Lima" target="_blank">Agendar</a></nav></div></header>
+<section class="hero"><div class="container"><h1>Sua beleza,<br>nossa paixão</h1><p>Studio de beleza especializado em cabelo, maquiagem e estética. Atendimento personalizado com produtos premium.</p><a href="https://wa.me/5517997521171?text=Ol%C3%A1!%20Quero%20agendar%20um%20hor%C3%A1rio%20com%20Juliana%20Lima" target="_blank" class="btn btn-primary">💅 Agendar horário</a></div></section>
+<section class="servicos" id="servicos"><div class="container"><h2 class="section-title">Nossos serviços</h2><p class="section-sub">Qualidade e cuidado em cada detalhe</p><div class="grid">
+<div class="card"><div class="card-icon">✂️</div><h3>Corte Feminino</h3><p>Corte personalizado conforme seu rosto e estilo</p><div class="preco">a partir de R$ 80</div></div>
+<div class="card"><div class="card-icon">🎨</div><h3>Coloração</h3><p>Luzes, mechas, coloração global e tonalizantes</p><div class="preco">a partir de R$ 150</div></div>
+<div class="card"><div class="card-icon">💄</div><h3>Maquiagem Social</h3><p>Para festas, casamentos e eventos especiais</p><div class="preco">a partir de R$ 120</div></div>
+<div class="card"><div class="card-icon">💆</div><h3>Hidratação</h3><p>Cronograma capilar completo para cabelos saudáveis</p><div class="preco">a partir de R$ 90</div></div>
+<div class="card"><div class="card-icon">💅</div><h3>Manicure & Pedicure</h3><p>Unhas perfeitas com esmaltação em gel</p><div class="preco">a partir de R$ 55</div></div>
+<div class="card"><div class="card-icon">✨</div><h3>Design de Sobrancelhas</h3><p>Henna, micropigmentação e limpeza</p><div class="preco">a partir de R$ 60</div></div>
+</div></div></section>
+<section class="identidade"><div class="container id-grid">
+<div class="id-mockup">
+<div class="mockup m1"><span style="font-family:'Dancing Script',cursive;font-size:2rem">JL</span></div>
+<div class="mockup m2"><span style="font-family:'Dancing Script',cursive;font-size:2.5rem">Juliana Lima</span></div>
+<div class="mockup m3">📇 Cartão de visitas digital</div>
+</div>
+<div class="id-text"><h2>Identidade Visual criada pela Krynos</h2><p>Uma marca elegante, sofisticada e memorável. Antes o studio não tinha identidade própria — hoje se destaca no mercado.</p><p><span class="check">✓</span>Logo principal e secundário</p><p><span class="check">✓</span>Paleta de cores exclusiva</p><p><span class="check">✓</span>Cartão de visitas digital</p><p><span class="check">✓</span>20 templates para Instagram</p></div>
+</div></section>
+<section class="cta"><div class="container"><h2>Quer uma marca igual a esta?</h2><p>Tenha uma identidade visual profissional que valoriza seu negócio.</p><a href="https://wa.me/5517997521171?text=Ol%C3%A1!%20Quero%20uma%20identidade%20visual%20igual%20a%20do%20Studio%20Juliana%20Lima" target="_blank" class="btn btn-primary">💬 Falar com Krynos</a></div></section>
+<footer><div class="container"><p>Studio Juliana Lima © 2026 · Identidade visual por <span>Krynos</span></p></div></footer>
+<a href="https://wa.me/5517997521171?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Studio%20Juliana%20Lima" target="_blank" class="wa">💬</a>
+</body>
+</html>

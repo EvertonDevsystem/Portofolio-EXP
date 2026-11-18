@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clínica Estética — Beleza & Autoestima</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--rosa:#ec4899;--lilas:#8b5cf6;--bg:#fdf4ff;--text:#4a1d5c;--muted:#7c6a8a}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+  .container{max-width:1180px;margin:0 auto;padding:0 24px}
+  header{background:#fff;padding:20px 0;position:sticky;top:0;z-index:10;box-shadow:0 2px 10px rgba(139,92,246,.08)}
+  .nav{display:flex;justify-content:space-between;align-items:center}
+  .logo{font-weight:700;font-size:1.3rem;background:linear-gradient(135deg,var(--rosa),var(--lilas));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .nav a{color:var(--text);text-decoration:none;margin-left:24px;font-weight:500;font-size:.92rem}
+  .hero{padding:100px 0;background:linear-gradient(135deg,#fce7f3 0%,#ede9fe 100%);text-align:center}
+  .hero h1{font-size:clamp(2rem,5vw,3.2rem);font-weight:700;margin-bottom:16px;line-height:1.2}
+  .hero h1 span{background:linear-gradient(135deg,var(--rosa),var(--lilas));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .hero p{color:var(--muted);font-size:1.1rem;max-width:540px;margin:0 auto 32px}
+  .btn{display:inline-block;padding:14px 36px;border-radius:50px;font-weight:600;text-decoration:none;transition:all .2s}
+  .btn-primary{background:linear-gradient(135deg,var(--rosa),var(--lilas));color:#fff;box-shadow:0 8px 24px rgba(236,72,153,.25)}
+  .btn-primary:hover{transform:translateY(-2px)}
+  .numeros{padding:60px 0;background:#fff}
+  .num-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:32px;text-align:center}
+  .num-item .big{font-size:3rem;font-weight:700;background:linear-gradient(135deg,var(--rosa),var(--lilas));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .num-item p{color:var(--muted);font-weight:500;margin-top:4px}
+  .feed{padding:80px 0}
+  .section-title{font-size:1.8rem;font-weight:700;text-align:center;margin-bottom:12px}
+  .section-sub{text-align:center;color:var(--muted);margin-bottom:40px}
+  .insta-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:700px;margin:0 auto}
+  .insta-post{aspect-ratio:1;border-radius:12px;display:grid;place-items:center;font-size:3rem;transition:transform .2s;cursor:pointer}
+  .insta-post:hover{transform:scale(1.04)}
+  .gestao{padding:60px 0;background:linear-gradient(135deg,#ede9fe,#fce7f3);text-align:center}
+  .gestao h2{font-size:1.8rem;font-weight:700;margin-bottom:16px}
+  .gestao .destaque{display:inline-block;background:#fff;padding:20px 40px;border-radius:16px;margin:20px 0;box-shadow:0 10px 40px rgba(139,92,246,.15)}
+  .gestao .antes{font-size:1.1rem;color:var(--muted)}
+  .gestao .seta{font-size:2rem;color:var(--lilas);margin:0 20px}
+  .gestao .depois{font-size:1.5rem;font-weight:700;color:var(--rosa)}
+  .servicos-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:32px;text-align:left;max-width:900px;margin-left:auto;margin-right:auto}
+  .serv-item{background:#fff;padding:16px 20px;border-radius:12px;font-size:.92rem;font-weight:500}
+  .serv-item::before{content:"✓ ";color:var(--lilas);font-weight:700}
+  .cta{padding:80px 0;text-align:center;background:#fff}
+  .cta h2{font-size:1.8rem;font-weight:700;margin-bottom:12px}
+  .cta p{color:var(--muted);margin-bottom:28px}
+  footer{background:#4a1d5c;color:#e9d5ff;padding:30px 0;text-align:center;font-size:.88rem}
+  footer span{color:#f9a8d4}
+  .wa{position:fixed;bottom:24px;right:24px;width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;color:#fff;font-size:1.8rem;box-shadow:0 8px 24px rgba(37,211,102,.4);text-decoration:none;z-index:99}
+</style>
+</head>
+<body>
+<header><div class="container nav"><div class="logo">✨ Clínica Estética</div><nav><a href="#servicos">Procedimentos</a><a href="https://instagram.com" target="_blank">Instagram</a><a href="https://wa.me/5517997521171?text=Ol%C3%A1!%20Quero%20agendar%20na%20Cl%C3%ADnica%20Est%C3%A9tica" target="_blank">Agendar</a></nav></div></header>
+<section class="hero"><div class="container"><h1>Realce sua <span>beleza natural</span></h1><p>Procedimentos estéticos seguros, modernos e com profissionais qualificados. Sua autoestima em primeiro lugar.</p><a href="https://wa.me/5517997521171?text=Ol%C3%A1!%20Quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20na%20Cl%C3%ADnica%20Est%C3%A9tica" target="_blank" class="btn btn-primary">Agendar avaliação</a></div></section>
+<section class="numeros"><div class="container num-grid">
+<div class="num-item"><div class="big">+15k</div><p>Seguidores no Instagram</p></div>
+<div class="num-item"><div class="big">500+</div><p>Clientes atendidas</p></div>
+<div class="num-item"><div class="big">98%</div><p>Satisfação</p></div>
+<div class="num-item"><div class="big">6 meses</div><p>de gestão Krynos</p></div>
+</div></section>
+<section class="feed"><div class="container"><h2 class="section-title">📸 Nosso feed</h2><p class="section-sub">Conteúdo diário que engaja e converte</p><div class="insta-grid">
+<div class="insta-post" style="background:linear-gradient(135deg,#fce7f3,#f9a8d4)">💆</div>
+<div class="insta-post" style="background:linear-gradient(135deg,#ede9fe,#c4b5fd)">✨</div>
+<div class="insta-post" style="background:linear-gradient(135deg,#fef3c7,#fcd34d)">💄</div>
+<div class="insta-post" style="background:linear-gradient(135deg,#dbeafe,#93c5fd)">🧴</div>
+<div class="insta-post" style="background:linear-gradient(135deg,#dcfce7,#86efac)">🌿</div>
+<div class="insta-post" style="background:linear-gradient(135deg,#ffe4e6,#fda4af)">💅</div>
+</div></div></section>
+<section class="gestao"><div class="container"><h2>Resultado da gestão de redes sociais pela Krynos</h2><div class="destaque"><span class="antes">3.000 seguidores</span><span class="seta">→</span><span class="depois">15.000 seguidores 🚀</span></div><p style="color:var(--muted);max-width:500px;margin:0 auto">Crescimento de 5x em apenas 6 meses com conteúdo estratégico e tráfego pago</p><div class="servicos-grid">
+<div class="serv-item">24 posts por mês</div>
+<div class="serv-item">Stories diários</div>
+<div class="serv-item">Legendas profissionais</div>
+<div class="serv-item">Tráfego pago mensal</div>
+<div class="serv-item">Design exclusivo</div>
+<div class="serv-item">Relatórios mensais</div>
+</div></div></section>
+<section class="cta"><div class="container"><h2>Quer crescer suas redes também?</h2><p>Tenha uma gestão profissional igual a esta. Clientes novos todos os dias.</p><a href="https://wa.me/5517997521171?text=Ol%C3%A1!%20Quero%20gest%C3%A3o%20de%20redes%20sociais%20igual%20a%20da%20Cl%C3%ADnica%20Est%C3%A9tica" target="_blank" class="btn btn-primary">💬 Falar com Krynos</a></div></section>
+<footer><div class="container"><p>Clínica Estética © 2026 · Gestão de redes por <span>Krynos</span></p></div></footer>
+<a href="https://wa.me/5517997521171?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Cl%C3%ADnica%20Est%C3%A9tica" target="_blank" class="wa">💬</a>
+</body>
+</html>

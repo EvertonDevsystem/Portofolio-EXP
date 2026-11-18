@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hamburgueria do Zé — O melhor da cidade</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--amarelo:#ffc107;--vermelho:#dc2626;--preto:#121212;--bg:#1a1a1a;--text:#fff}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+  .container{max-width:1180px;margin:0 auto;padding:0 24px}
+  header{background:rgba(0,0,0,.8);backdrop-filter:blur(10px);padding:18px 0;position:sticky;top:0;z-index:10;border-bottom:2px solid var(--amarelo)}
+  .nav{display:flex;justify-content:space-between;align-items:center}
+  .logo{font-family:'Bebas Neue',cursive;font-size:2rem;letter-spacing:2px;color:var(--amarelo)}
+  .nav a{color:#fff;text-decoration:none;margin-left:24px;font-weight:500}
+  .hero{padding:100px 0;background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url('') center/cover;text-align:center;background-color:#2a1810}
+  .hero h1{font-family:'Bebas Neue',cursive;font-size:clamp(2.5rem,7vw,5rem);letter-spacing:3px;color:var(--amarelo);margin-bottom:12px}
+  .hero p{font-size:1.2rem;max-width:500px;margin:0 auto 32px;color:#ddd}
+  .btn{display:inline-block;padding:16px 40px;border-radius:8px;font-weight:700;text-decoration:none;font-size:1rem;transition:all .2s;border:none;cursor:pointer}
+  .btn-primary{background:var(--amarelo);color:var(--preto);box-shadow:0 6px 20px rgba(255,193,7,.3)}
+  .btn-primary:hover{transform:scale(1.05)}
+  .cardapio{padding:80px 0}
+  .section-title{font-family:'Bebas Neue',cursive;font-size:2.5rem;letter-spacing:2px;text-align:center;margin-bottom:40px;color:var(--amarelo)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+  .item{background:#242424;border-radius:12px;padding:20px;display:flex;gap:16px;align-items:center;border:1px solid #333;transition:all .2s}
+  .item:hover{border-color:var(--amarelo);transform:translateX(4px)}
+  .item-icon{width:70px;height:70px;border-radius:12px;background:linear-gradient(135deg,#dc2626,#ff6b35);display:grid;place-items:center;font-size:2rem;flex-shrink:0}
+  .item-info{flex:1}
+  .item-info h3{font-size:1.1rem;margin-bottom:4px}
+  .item-info p{font-size:.85rem;color:#999;margin-bottom:8px}
+  .item-info .preco{font-size:1.2rem;font-weight:700;color:var(--amarelo)}
+  .pedir{background:var(--vermelho);padding:60px 0;text-align:center}
+  .pedir h2{font-family:'Bebas Neue',cursive;font-size:2.2rem;letter-spacing:2px;margin-bottom:12px}
+  .pedir p{margin-bottom:24px;opacity:.95}
+  .local{padding:60px 0;background:#242424;text-align:center}
+  .local h3{font-family:'Bebas Neue',cursive;font-size:1.8rem;letter-spacing:1px;margin-bottom:16px;color:var(--amarelo)}
+  .local p{color:#bbb;margin-bottom:8px}
+  footer{background:#0a0a0a;padding:24px 0;text-align:center;color:#888;font-size:.85rem;border-top:1px solid #222}
+  footer span{color:var(--amarelo)}
+  .wa{position:fixed;bottom:24px;right:24px;width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;color:#fff;font-size:1.8rem;box-shadow:0 8px 24px rgba(37,211,102,.4);text-decoration:none;z-index:99}
+</style>
+</head>
+<body>
+<header><div class="container nav"><div class="logo">HAMBURGUERIA DO ZÉ</div><nav><a href="#cardapio">Cardápio</a><a href="#local">Localização</a><a href="https://wa.me/5517997521171?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido%20na%20Hamburgueria%20do%20Z%C3%A9" target="_blank">Pedir agora</a></nav></div></header>
+<section class="hero"><div class="container"><h1>O MELHOR BURGUER<br>DA CIDADE</h1><p>Ingredientes premium, pão artesanal e carne 180g. Feito com amor, servido com paixão.</p><a href="#cardapio" class="btn btn-primary">VER CARDÁPIO 🍔</a></div></section>
+<section class="cardapio" id="cardapio"><div class="container"><h2 class="section-title">— NOSSO CARDÁPIO —</h2><div class="grid">
+<div class="item"><div class="item-icon">🍔</div><div class="item-info"><h3>Clássico do Zé</h3><p>Pão, carne 180g, queijo, alface, tomate, molho especial</p><div class="preco">R$ 28,90</div></div></div>
+<div class="item"><div class="item-icon">🧀</div><div class="item-info"><h3>Duplo Cheddar</h3><p>2 carnes, queijo cheddar derretido, cebola caramelizada</p><div class="preco">R$ 34,90</div></div></div>
+<div class="item"><div class="item-icon">🥓</div><div class="item-info"><h3>Bacon Explosion</h3><p>Carne, bacon crocante, queijo, ovo, molho barbecue</p><div class="preco">R$ 38,90</div></div></div>
+<div class="item"><div class="item-icon">🌶️</div><div class="item-info"><h3>Chicken Picante</h3><p>Filé empanado, molho apimentado, queijo, alface</p><div class="preco">R$ 32,90</div></div></div>
+<div class="item"><div class="item-icon">🍟</div><div class="item-info"><h3>Batata Frita Grande</h3><p>Crocante por fora, macia por dentro. 400g</p><div class="preco">R$ 16,90</div></div></div>
+<div class="item"><div class="item-icon">🥤</div><div class="item-info"><h3>Refrigerante 500ml</h3><p>Coca, Guaraná, Fanta ou Sprite</p><div class="preco">R$ 7,90</div></div></div>
+</div></div></section>
+<section class="pedir"><div class="container"><h2>FAÇA SEU PEDIDO PELO WHATSAPP</h2><p>É só clicar, escolher seu lanche e receber em casa. Rápido e sem complicação!</p><a href="https://wa.me/5517997521171?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido:%20_______" target="_blank" class="btn btn-primary">📱 PEDIR AGORA</a></div></section>
+<section class="local" id="local"><div class="container"><h3>ONDE ESTAMOS</h3><p>📍 Rua das Flores, 456 — Centro</p><p>⏰ Ter a Dom: 18h às 23h</p><p>📞 (17) 99999-9999</p></div></section>
+<footer><div class="container"><p>Hamburgueria do Zé © 2026 · Site desenvolvido por <span>Krynos</span></p></div></footer>
+<a href="https://wa.me/5517997521171?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Hamburgueria%20do%20Z%C3%A9" target="_blank" class="wa">💬</a>
+</body>
+</html>

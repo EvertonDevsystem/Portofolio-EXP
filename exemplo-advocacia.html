@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Escritório de Advocacia — Defendendo seus direitos</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--dourado:#b8860b;--azul:#1e3a5f;--bg:#f8f6f0;--text:#1a1a1a;--muted:#5a5a5a}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+  .container{max-width:1180px;margin:0 auto;padding:0 24px}
+  header{background:var(--azul);color:#fff;padding:20px 0;position:sticky;top:0;z-index:10}
+  .nav{display:flex;justify-content:space-between;align-items:center}
+  .logo{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700}
+  .logo span{color:var(--dourado)}
+  .nav a{color:#e8e8e8;text-decoration:none;margin-left:24px;font-size:.92rem;font-weight:500}
+  .nav a:hover{color:var(--dourado)}
+  .hero{padding:120px 0;background:linear-gradient(rgba(30,58,95,.92),rgba(30,58,95,.95)),url('') center/cover;text-align:center;color:#fff}
+  .hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.2rem);margin-bottom:20px;line-height:1.2}
+  .hero p{font-size:1.1rem;max-width:600px;margin:0 auto 32px;color:#d4d4d4}
+  .btn{display:inline-block;padding:14px 36px;border-radius:6px;font-weight:600;text-decoration:none;transition:all .2s;font-family:'Inter',sans-serif}
+  .btn-primary{background:var(--dourado);color:#fff;box-shadow:0 6px 20px rgba(184,134,11,.25)}
+  .btn-primary:hover{transform:translateY(-2px);background:#d4a017}
+  .areas{padding:80px 0}
+  .section-title{font-family:'Playfair Display',serif;font-size:2rem;text-align:center;margin-bottom:12px;color:var(--azul)}
+  .section-sub{text-align:center;color:var(--muted);margin-bottom:48px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+  .area{background:#fff;padding:28px;border-radius:10px;border-left:4px solid var(--dourado);box-shadow:0 4px 16px rgba(0,0,0,.05);transition:all .2s}
+  .area:hover{transform:translateX(4px);box-shadow:0 8px 24px rgba(0,0,0,.08)}
+  .area-icon{font-size:2rem;margin-bottom:12px;color:var(--dourado)}
+  .area h3{font-family:'Playfair Display',serif;font-size:1.15rem;margin-bottom:8px;color:var(--azul)}
+  .area p{color:var(--muted);font-size:.92rem}
+  .advogados{padding:60px 0;background:#fff;border-top:1px solid #e5e0d0;border-bottom:1px solid #e5e0d0}
+  .adv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:32px;max-width:900px;margin:0 auto}
+  .adv{text-align:center}
+  .adv-foto{width:140px;height:140px;border-radius:50%;background:linear-gradient(135deg,var(--azul),#2d5a87);margin:0 auto 16px;display:grid;place-items:center;font-size:3rem;color:var(--dourado);border:4px solid var(--dourado)}
+  .adv h4{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--azul)}
+  .adv p{color:var(--muted);font-size:.88rem}
+  .agendar{padding:80px 0;background:var(--azul);color:#fff;text-align:center}
+  .agendar h2{font-family:'Playfair Display',serif;font-size:2rem;margin-bottom:16px}
+  .agendar p{color:#c9c9c9;margin-bottom:28px;max-width:500px;margin-left:auto;margin-right:auto}
+  form{max-width:500px;margin:0 auto;display:flex;flex-direction:column;gap:14px;text-align:left}
+  input,select,textarea{padding:14px;border-radius:6px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#fff;font-family:'Inter',sans-serif;font-size:.95rem}
+  input::placeholder,textarea::placeholder{color:#a0a0a0}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--dourado)}
+  label{font-size:.85rem;color:#c9c9c9;font-weight:500}
+  footer{background:#0f1f33;color:#8898aa;padding:30px 0;text-align:center;font-size:.85rem}
+  footer span{color:var(--dourado)}
+  .wa{position:fixed;bottom:24px;right:24px;width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;color:#fff;font-size:1.8rem;box-shadow:0 8px 24px rgba(37,211,102,.4);text-decoration:none;z-index:99}
+</style>
+</head>
+<body>
+<header><div class="container nav"><div class="logo">Escritório <span>Advocacia</span></div><nav><a href="#areas">Áreas</a><a href="#advogados">Equipe</a><a href="#agendar">Consulta</a></nav></div></header>
+<section class="hero"><div class="container"><h1>Defendendo seus direitos<br>com excelência e ética</h1><p>Advocacia comprometida com resultados. Atendimento personalizado para cada caso. Primeira consulta gratuita.</p><a href="#agendar" class="btn btn-primary">📅 Agendar consulta</a></div></section>
+<section class="areas" id="areas"><div class="container"><h2 class="section-title">Áreas de atuação</h2><p class="section-sub">Especialistas em diversas áreas do direito</p><div class="grid">
+<div class="area"><div class="area-icon">👨‍👩‍👧</div><h3>Direito de Família</h3><p>Divórcios, guarda, pensão alimentícia, inventários e adoções.</p></div>
+<div class="area"><div class="area-icon">💼</div><h3>Direito Trabalhista</h3><p>Rescisões, horas extras, assédio moral e defesa do trabalhador.</p></div>
+<div class="area"><div class="area-icon">🏠</div><h3>Direito Imobiliário</h3><p>Contratos, locações, usucapião e regularização de imóveis.</p></div>
+<div class="area"><div class="area-icon">⚖️</div><h3>Direito Civil</h3><p>Contratos, indenizações, responsabilidade civil e questões diversas.</p></div>
+<div class="area"><div class="area-icon">💰</div><h3>Direito Previdenciário</h3><p>Aposentadorias, benefícios, revisões e planejamento previdenciário.</p></div>
+<div class="area"><div class="area-icon">🏢</div><h3>Direito Empresarial</h3><p>Constituição de empresas, contratos comerciais e recuperação judicial.</p></div>
+</div></div></section>
+<section class="advogados" id="advogados"><div class="container"><h2 class="section-title">Nossa equipe</h2><p class="section-sub">Profissionais qualificados e comprometidos</p><div class="adv-grid">
+<div class="adv"><div class="adv-foto">👨‍⚖️</div><h4>Dr. Carlos Silva</h4><p>OAB/SP 000.000<br>Especialista em Direito Civil</p></div>
+<div class="adv"><div class="adv-foto">👩‍⚖️</div><h4>Dra. Amanda Costa</h4><p>OAB/SP 000.001<br>Especialista em Direito de Família</p></div>
+<div class="adv"><div class="adv-foto">👨‍⚖️</div><h4>Dr. Ricardo Santos</h4><p>OAB/SP 000.002<br>Especialista em Direito Trabalhista</p></div>
+</div></div></section>
+<section class="agendar" id="agendar"><div class="container"><h2>Agende sua consulta gratuita</h2><p>Preencha o formulário e entraremos em contato em até 24 horas para agendar seu atendimento.</p><form onsubmit="event.preventDefault();window.open('https://wa.me/5517997521171?text=Ol%C3%A1!%20Quero%20agendar%20uma%20consulta%20no%20Escrit%C3%B3rio%20de%20Advocacia','_blank')">
+<label>Nome completo</label><input type="text" required placeholder="Seu nome">
+<label>WhatsApp</label><input type="tel" required placeholder="(00) 00000-0000">
+<label>Área de interesse</label><select><option>Direito de Família</option><option>Direito Trabalhista</option><option>Direito Imobiliário</option><option>Direito Civil</option><option>Direito Previdenciário</option><option>Direito Empresarial</option></select>
+<label>Breve descrição</label><textarea rows="3" placeholder="Descreva brevemente seu caso..."></textarea>
+<button type="submit" class="btn btn-primary" style="margin-top:8px">📨 Enviar solicitação</button>
+</form></div></section>
+<footer><div class="container"><p>Escritório de Advocacia © 2026 · Site desenvolvido por <span>Krynos</span></p></div></footer>
+<a href="https://wa.me/5517997521171?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Escrit%C3%B3rio%20de%20Advocacia" target="_blank" class="wa">💬</a>
+</body>
+</html>
